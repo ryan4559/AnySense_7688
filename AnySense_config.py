@@ -1,12 +1,12 @@
-import pm_g3 as pm_sensor
+import pm_a4 as pm_sensor
 import th_htu21d as tmp_sensor
 import light_bh1750fvi as light_sensor
 import co2_s8 as gas_sensor
 
 Sense_PM = 1                          
-Sense_Tmp = 1              
-Sense_Light = 1
-Sense_Gas = 1  
+Sense_Tmp = 0              
+Sense_Light = 0
+Sense_Gas = 0  
 
 GPS_LAT = 25.1933
 GPS_LON = 121.7870
@@ -14,7 +14,7 @@ APP_ID = "AnySense"
 DEVICE = "LinkIt Smart 7688"
 DEVICE_ID = "DEVICE_ID1234"
 
-MQTT_broker = 'gpssensor.ddns.net'
+MQTT_broker = '192.168.0.218'
 MQTT_port = 1883                  
 MQTT_topic = 'LASS/Test/PM25/AnySense'
 MQTT_interval = 5			# interval between every two MQTT messages (seconds)
